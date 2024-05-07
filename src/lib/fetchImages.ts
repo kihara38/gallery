@@ -13,7 +13,7 @@ Promise<ImagesResults | undefined>{
         if(!res.ok)throw new Error("Fetch Images error!\n")
 
         const imagesResults:ImagesResults=await res.json()
-        console.log(imagesResults)
+        // console.log(imagesResults)
 
         //parse data with Zod Schema
         const parsedData=ImagesSchemaWithPhotos.parse
