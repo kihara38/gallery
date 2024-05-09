@@ -10,7 +10,7 @@ export default function Search(){
 
     const handleSubmit=(e:FormEvent<HTMLFormElement>)=>{
         e.preventDefault()
-        router.push(`/results/${Search}`)
+       if (Search) router.push(`/results/${Search}`)
         setSearch('')
     }
 
